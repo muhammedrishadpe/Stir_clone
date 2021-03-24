@@ -1,0 +1,343 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--off-white);
+}
+
+:root {
+    --off-white: rgb(240, 240, 240);
+    --regular-font: "Circular Std Book";
+    --bold-font: "Circular Std Bold";
+    --box-shadow: rgba(57, 47, 86, 0.08) 0px 4px 64px 20px;
+}
+
+#img-logo {
+    width: 125px;
+}
+
+header{
+    padding: 0 !important;
+    background: #fff;
+}
+
+header.active{
+    box-shadow: 0 1px 5px 1px rgba(0,0,0, 0.2);
+}
+
+header.fixed{
+    padding: 0 0;
+}
+
+header button{
+    position: absolute;
+    top:30px;right: 30px;
+    display: block;
+    width: 30px;
+    height: 40px;
+    padding-top: 6px;
+    border: none;
+    background: #fff;
+}
+
+header button span{
+    position: relative;
+    top: 0;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 3px;
+    transition: all .2s ease;
+    background: #000000;
+}
+
+header button span:nth-child(2) {
+    right: 0;
+    width: 25px;
+    opacity: 1;
+}
+
+header button span:nth-child(3){
+    width: 25px;
+}
+
+header.active button span:nth-child(1){
+    top: 8px;
+    left: -4px;
+    -ms-transform: rotate(38deg);
+    transform: rotateZ(38deg);
+}
+
+header.active button span:nth-child(2){
+    right: -100%;
+    opacity: 0;
+}
+
+header.active button span:nth-child(3){
+    top: -6px;
+    left: -4px;
+    width: 100%;
+    -ms-transform: rotate(-38deg);
+    transform: rotateZ(-38deg);
+}
+
+header ul.menu-left{
+    display: none;
+}
+
+header img{
+    margin-left: 20px !important;
+}
+
+header.active ul.menu-left{
+    display: block;
+    float: none;
+    clear: both;
+}
+
+header.active ul.menu-left li{
+    display: block !important;
+    padding: 10px 20px;
+}
+
+header ul.menu-right{
+    display: none;
+}
+
+.wrapper {
+    padding:1.5em 0;
+}
+
+/* nav end */
+
+/*section one start */
+
+.main-container {
+    background-color: white;
+    padding: 2em;
+}
+
+.section-one {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-one h1 {
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0.4em;
+  
+}
+
+.section-one p {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    font-size:0.9rem;
+    line-height: 1.7em;
+    padding: 0.9em;
+
+}
+
+.section-one a{
+    color: rgb(113, 66, 187);
+    font-family: Arial, Helvetica, sans-serif;   
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0.1rem 0;
+}
+
+.img-div {
+    padding: 2em 0.4em;
+}
+
+.section-one div .dashbord-img {
+
+    width: 100%;
+    margin: 1em 0;
+}
+
+.trust {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5em;
+    margin-top: -10.5em;
+    z-index: 999;
+    background-color: white;
+
+}
+
+.trust h1 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.trusted-by {
+    width: 150px;
+    padding: 0.6em 0;
+}
+
+/* section two*/
+
+#idea {
+    font-size: 0.690rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 3em 1em ;
+
+}
+
+#idea h1 span::after{
+    content:"";
+    background: linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
+    width: 5.6em;
+    height: 0.16em;
+    margin: -2em -2em -0.3em -5.7em;
+    display: inline-block;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+
+.sec-container {
+    width: 80%;
+    margin: 1.5em auto; 
+    box-shadow: var(--box-shadow);
+    padding: 1em 1em;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.sec-container .sec-two-img {
+    width: 95%;
+    z-index: 0;
+}
+
+.sec-two-para h2{
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+/* section three*/
+/* all para */
+.para{
+    color:rgba(0, 0, 0, 0.5);
+    line-height: 1.9em;
+    letter-spacing: .1px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-all {
+    width: 100%;
+    background-color: white;
+    padding: 6em 0;
+    margin: -0.2em;
+}
+
+.three-container {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.three-container h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    text-align: end;
+}
+
+.sec-three-img {
+    width: 98%;   
+}
+
+/* choose split btn */
+
+.type-of-split {
+    text-align: left;
+    width: 98%;
+    height: 15vh;
+    background-color: white;
+    margin-bottom: -2em;
+}
+
+.type-of-split h2{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    margin-left: 0.7em;
+}
+
+.choose-split {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: left;
+    color: black;
+    
+}
+
+.split-btn {
+    display: inline-block;
+    padding: 5px 10px ;
+    margin: 1em;
+    font-size: 0.8em;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.active-btn {
+    background-color: black;
+}
+
+.four-container {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.four-container h3{
+    background: linear-gradient(90deg, rgb(255, 100, 75) 0%, rgb(255, 95, 88) 20%, rgb(178, 39, 98) 95%, rgb(138, 83, 162) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    margin: 0;
+    text-align: start;
+}
+
+.four-pad {
+    padding: 3.7em 0 0 0;
+}
