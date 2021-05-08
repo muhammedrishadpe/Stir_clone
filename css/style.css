@@ -300,6 +300,7 @@ header ul.menu-right{
 
 .para-three {
     text-align: right;
+    padding-bottom: 4em;
 }
 
 .three-container h1 {
@@ -315,6 +316,8 @@ header ul.menu-right{
 .type-of-split {
     background-color: white;
     z-index: 999;
+    padding: 3em 0em;
+    padding-top: 4em;
 }
 
 .type-of-split h2{
@@ -688,7 +691,7 @@ footer {
 
   @media only screen and (min-width: 640px) {
    .section-one h1 {
-       font-size: 61px;
+       font-size: 67px;
    }
    .section-one p {
         padding: 0 2em;
@@ -788,6 +791,37 @@ footer {
         padding: 0;
     }
     .sec-container {
-        width: 50%;
+        width: 57%;
+        padding: 3em 1.3em;
+        line-height: 2em;
     }
+    .sec-container p {
+        line-height: 1.8em;
+    }
+    #idea h1 span::after {
+        height: 0.09em;
+    }
+
+.seven-container p {
+    color: var(--off-white);
+    line-height: 1.9em;
+    padding-right: 18em;
+}
+.drop-box-content {
+    width: 75%;
+}
+.eight-container h2 {
+    font-size: 3.3em;
+}
+.section-one {
+  width: 65%;
+  font-size: 13px;
+}
+.section-one h1 {
+    font-size: 56px;
+}
   }  
+
+  @media only screen and (min-width: 1101px) {
+    
+  }
