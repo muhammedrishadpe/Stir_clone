@@ -822,6 +822,43 @@ footer {
 }
   }  
 
-  @media only screen and (min-width: 1101px) {
-    
+  @media only screen and (min-width: 1001px) {
+    .section-one h1 {
+        /* font-size: 14px; */
+    }
+    .section-one p {
+        font-size: 17px;
+    }
+    .trust-img {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 3em;
+        align-items: center;
+    }
+    .trusted-by {
+        width: 100%;
+    }
+    .trust {
+        margin-top: -8.5em;
+        z-index: 999;
+        background-color: white;
+        padding: 0;
+        padding-top: 6em ;
+    }
+    #idea h1 {
+        font-size: 2.3rem;
+        font-weight: bold;
+        padding: 0em 3em;
+    }
   }
+
+  @media only screen and (min-width: 1101px) {
+    .img-div {
+        display: none;
+    }
+    .desktop-img {
+        display: grid;
+        grid-template-columns: 300px 500px;
+    }
+    
+}
