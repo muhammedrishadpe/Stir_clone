@@ -859,6 +859,38 @@ footer {
     .desktop-img {
         display: grid;
         grid-template-columns: 300px 500px;
+        justify-content: center;
+        width: 500px;
+
     }
-    
+    ul, li {
+        list-style: none;
+        text-decoration: none;
+        padding-bottom: 1.2em;
+    }    
+    .desktop-left{
+        text-align: left;
+        padding: 2em;
+        background-color: grey;
+    }
+    .desktop-img-logo {
+        width: 35%;
+        position: relative;
+        top: -1.3rem;
+        left: -1em;
+    }
+    .your-space {
+        position: relative;
+        left: -3em;
+    }
+    .collectives-img {
+        width: 11%;
+        padding-right: 0.9em;
+        position: relative;
+        top: 7px;
+    }
+    .top-pad {
+        margin-top: 6em;
+    }
+    }
 }
